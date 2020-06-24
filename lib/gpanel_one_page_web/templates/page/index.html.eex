@@ -1,0 +1,125 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="column col-md-12">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="card-transparent jumbo-card">
+            <div class="card-body jumbo-card-body">
+              <h2>
+               This would be a platform where you can host your Terraria server.
+              </h2>
+              <p>
+                Start Vanilla, TShock, tModLoader server for Terraria.
+              </p>
+              <p>
+                <a class="btn btn-primary btn-large" href="https://discord.gg/gBFZesK">
+                  Join us on Discord
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="display-3 text-center">You would have you own Terraria</p>
+      <p class="display-3 text-center">server with</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card-columns">
+       <div class="card bg-light border-warning">
+         <div class="card-header text-center">
+           <p class="card-text">Custom Terraria panel</p>
+         </div>
+         <div class="card-body text-center">
+           <p class="card-text">We created a custom panel for your Terraria server</p>
+         </div>
+       </div>
+       <div class="card bg-light border-info">
+         <div class="card-header text-center">
+           <p class="card-text">Installing mods to your server</p>
+         </div>
+         <div class="card-body text-center">
+           <p class="card-text">Choose vanilla Terraria, TShock or tModLoader server.</p>
+         </div>
+       </div>
+       <div class="card bg-light border-success">
+         <div class="card-header text-center">
+           <p class="card-text">High speed SSDs</p>
+         </div>
+         <div class="card-body text-center">
+           <p class="card-text">We try to find the best hardware for your servers.</p>
+         </div>
+       </div>
+       <div class="card bg-light border-dark">
+         <div class="card-header text-center">
+           <p class="card-text">No slots limit</p>
+         </div>
+         <div class="card-body text-center">
+           <p class="card-text">Only recommended number of slots for comfort game.</p>
+         </div>
+       </div>
+       <div class="card bg-light  border-info">
+         <div class="card-header text-center">
+           <p class="card-text">DDOS shield</p>
+         </div>
+         <div class="card-body text-center">
+           <p class="card-text">DDOS protection that recognizes 99% of attacks</p>
+         </div>
+       </div>
+       <div class="card bg-light border-danger">
+         <div class="card-header text-center">
+           <p class="card-text">Helping source project</p>
+         </div>
+         <div class="card-body text-center">
+           <p class="card-text">You can contribute to our project on GitHub.</p>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="column col-md-12">
+      <h4 class="display-3 text-center"> Checkout our public servers </h4>
+
+      <div class="card server-card">
+        <div class="card-header h5 bg-success">
+         [NL] Public Game Vanilla Server
+        </div>
+        <div class="card-body">
+          <a href="https://terraria-servers.com/server/3997/"><img src="https://terraria-servers.com/server/3997/banners/leaderboard-1.png" border="0"></a>
+        </div>
+        <div class="card-footer">
+          Classic server. The wold is being regenerated once in a week.
+        </div>
+      </div>
+
+      <div class="card server-card">
+        <div class="card-header h5 bg-info">
+         [NL] TShock Public server
+        </div>
+        <div class="card-body">
+          <a href="https://terraria-servers.com/server/3993/"><img src="https://terraria-servers.com/server/3993/banners/leaderboard-2.png" border="0"></a>
+        </div>
+        <div class="card-footer">
+          Modded server. We can install any mods you like on this server, just send a message in discord.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
