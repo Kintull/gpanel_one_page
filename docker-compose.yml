@@ -4,4 +4,4 @@ services:
   gpanel_one_page:
     image: kintull/gpanel_one_page
     ports:
-      - 80:80
+      - 80:4004
