@@ -1,7 +1,9 @@
 version: '3.2'
 
 services:
-  gpanel_one_page:
-    image: kintull/gpanel_one_page
+  server:
+    image: kintull/gpanel_one_page:latest
+    env_file:
+      - gpanel_one_page.env
     ports:
       - 80:4004

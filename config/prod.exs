@@ -10,7 +10,17 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :gpanel_one_page, GpanelOnePageWeb.Endpoint,
-  url: [host: "kintu.com", port: 4004]
+#  url: [host: "kintu.com", port: 4044]
+  url: [
+         host: System.get_env("GPANEL_HOST"),
+         port: System.get_env("GPANEL_EXTERNAL_PORT")
+       ],
+  server: true,
+  http: [
+    port: String.to_integer(System.get_env("GPANEL_INTERNAL_PORT") || "4004"),
+    transport_options: [socket_opts: [:inet4]]
+  ],
+  secret_key_base: System.get_env("GPANEL_SECRET_KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
