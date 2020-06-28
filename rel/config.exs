@@ -49,7 +49,9 @@ end
 release :gpanel_one_page do
   set version: current_version(:gpanel_one_page)
   set applications: [
-    :runtime_tools
+    :runtime_tools,
+    :cowboy,
+    :ssl
   ]
 end
 

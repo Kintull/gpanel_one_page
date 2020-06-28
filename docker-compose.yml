@@ -6,4 +6,4 @@ services:
     env_file:
       - gpanel_one_page.env
     ports:
-      - 80:4004
+      - 443:4004
