@@ -9,6 +9,7 @@ build-dev: ## Build development Docker image
 		--build-arg GPANEL_EXTERNAL_PORT=443 \
 		--build-arg GPANEL_SSL_CERT_PATH=priv/cert/selfsigned.pem \
 		--build-arg GPANEL_SSL_KEY_PATH=priv/cert/selfsigned_key.pem \
+		--build-arg GPANEL_SECRET_KEY_BASE=N1uVAABEQ5AVnOjtUvjt1wVrEQ+e4GNjhvU5RQmGaiC8KT6baGYpG02kYD4apLmT \
 		-t kintull/gpanel_one_page:latest .
 
 build-prod: # Build production Docker image
@@ -18,6 +19,7 @@ build-prod: # Build production Docker image
 		--build-arg GPANEL_EXTERNAL_PORT=${GPANEL_EXTERNAL_PORT} \
 		--build-arg GPANEL_SSL_CERT_PATH=${GPANEL_SSL_CERT_PATH} \
 		--build-arg GPANEL_SSL_KEY_PATH=${GPANEL_SSL_KEY_PATH} \
+		--build-arg GPANEL_SECRET_KEY_BASE=${GPANEL_SECRET_KEY_BASE} \
 		-t kintull/gpanel_one_page:latest .
 
 run: ## Run the app in Docker
