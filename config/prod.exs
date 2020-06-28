@@ -27,7 +27,9 @@ config :gpanel_one_page, GpanelOnePageWeb.Endpoint,
          port: System.get_env("GPANEL_EXTERNAL_PORT")
        ],
        server: true,
+       force_ssl: [hsts: true],
        https: [
+         otp_app: :gpanel_one_page,
          port: String.to_integer(System.get_env("GPANEL_INTERNAL_PORT") || "4004"),
          cipher_suite: :strong,
          keyfile: System.get_env("GPANEL_SSL_KEY_PATH"),

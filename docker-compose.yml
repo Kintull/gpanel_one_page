@@ -5,5 +5,7 @@ services:
     image: kintull/gpanel_one_page:latest
     env_file:
       - gpanel_one_page.env
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
     ports:
       - 443:4004
