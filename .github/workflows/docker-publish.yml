@@ -17,6 +17,14 @@ env:
   # TODO: Change variable to your image's name.
   IMAGE_NAME: kintull/gpanel_one_page
 
+  GPANEL_HOST: ${{secrets.HOST}}
+  GPANEL_INTERNAL_PORT: ${{secrets.INTERNAL_PORT}}
+  GPANEL_EXTERNAL_PORT: ${{secrets.EXTERNAL_PORT}}
+  GPANEL_SSL_CERT_PATH: ${{secrets.SSL_CERT_PATH}}
+  GPANEL_SSL_KEY_PATH: ${{secrets.SSL_KEY_PATH}}
+  DOCKER_LOGIN: ${{secrets.DOCKER_USER}}
+  DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+
 jobs:
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
@@ -28,10 +36,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build image
-        run: docker build --file Dockerfile --tag $IMAGE_NAME --build-arg GPANEL_HOST=${{secrets.HOST}} --build-arg GPANEL_INTERNAL_PORT=${{secrets.INTERNAL_PORT}} --build-arg GPANEL_EXTERNAL_PORT=${{secrets.EXTERNAL_PORT}} --build-arg GPANEL_SSL_CERT_PATH=#{{SSL_CERT_PATH}} --build-arg GPANEL_SSL_KEY_PATH=#{{SSL_KEY_PATH}} .
+        run: make build-prod
 
       - name: Log into registry
-        run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{secrets.DOCKER_PASSWORD}}
+        run: docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
 
       - name: Push image
         run: |
