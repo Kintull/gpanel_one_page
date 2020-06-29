@@ -111,7 +111,6 @@ COPY --from=deps_builder /opt/release/deps ./deps
 RUN ls _build/${MIX_ENV}/
 RUN ls .
 
-RUN mix do compile
 
 # This step builds assets for the Phoenix app (if there is one)
 # If you aren't building a Phoenix app, pass `--build-arg SKIP_PHOENIX=true`
@@ -120,9 +119,10 @@ RUN if [ ! "$SKIP_PHOENIX" = "true" ]; then \
   cd ${PHOENIX_SUBDIR}/assets && \
   yarn install && \
   yarn deploy && \
-  cd - && \
-  mix phx.digest; \
+  cd ..; \
 fi
+
+RUN mix do compile, phx.digest
 
 RUN \
   mkdir -p /opt/release && \
