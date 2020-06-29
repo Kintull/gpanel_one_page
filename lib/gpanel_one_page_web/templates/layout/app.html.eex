@@ -10,19 +10,24 @@
   </head>
 
   <header>
-    <nav class="navbar bg-dark">
+    <nav class="py-3 navbar bg-dark">
       <a class="navbar-brand text-white" href="#">Kintu Dedicated Servers</a>
     </nav>
   </header>
 
   <body>
     <div class="container-fluid">
-
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <%= render @view_module, @view_template, assigns %>
     </div>
+
+    <%= render @view_module, @view_template, assigns %>
+
+    <footer id="sticky-footer" class="py-3 bg-dark text-white-50 footer">
+        <div class="container text-center">
+          <small>Copyright &copy; kintu.net</small>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/jquery.min.js") %>"></script>

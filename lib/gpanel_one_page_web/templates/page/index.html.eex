@@ -1,83 +1,73 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="column col-md-12">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="card-transparent jumbo-card">
-            <div class="card-body jumbo-card-body">
-              <h2>
-               This would be a platform where you can host your Terraria server.
-              </h2>
-              <p>
-                Start Vanilla, TShock, tModLoader server for Terraria.
-              </p>
-              <p>
-                <a class="btn btn-primary btn-large" href="https://discord.gg/gBFZesK">
-                  Join us on Discord
-                </a>
-              </p>
-            </div>
-          </div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="card-transparent jumbo-card">
+      <div class="card-body jumbo-card-body">
+        <div class="py-2">
+          <h2>
+           We are building a hosting for Terraria
+          </h2>
+          <p>
+            Start Vanilla, TShock, tModLoader servers.
+          </p>
         </div>
+        <p class="py-1">
+          <a class="btn btn-success btn-large" href="https://discord.gg/gBFZesK">
+            Follow us on Discord
+          </a>
+        </p>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="row row-content">
     <div class="col-md-12">
-      <p class="display-3 text-center">You would have you own Terraria</p>
-      <p class="display-3 text-center">server with</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
+      <p class="display-3 text-center text-dark">Kintu servers are powered with</p>
       <div class="card-columns">
-       <div class="card bg-light border-warning">
-         <div class="card-header text-center">
+       <div class="card bg-light info-card">
+         <div class="card-header bg-info text-center text-white">
            <p class="card-text">Custom Terraria panel</p>
          </div>
          <div class="card-body text-center">
            <p class="card-text">We created a custom panel for your Terraria server</p>
          </div>
        </div>
-       <div class="card bg-light border-info">
-         <div class="card-header text-center">
+       <div class="card bg-light info-card">
+         <div class="card-header bg-info text-center text-white">
            <p class="card-text">Installing mods to your server</p>
          </div>
          <div class="card-body text-center">
            <p class="card-text">Choose vanilla Terraria, TShock or tModLoader server.</p>
          </div>
        </div>
-       <div class="card bg-light border-success">
-         <div class="card-header text-center">
+       <div class="card bg-light info-card">
+         <div class="card-header bg-info text-center text-white">
            <p class="card-text">High speed SSDs</p>
          </div>
          <div class="card-body text-center">
-           <p class="card-text">We try to find the best hardware for your servers.</p>
+           <p class="card-text">We are looking for the best hardware for your servers.</p>
          </div>
        </div>
-       <div class="card bg-light border-dark">
-         <div class="card-header text-center">
+       <div class="card bg-light info-card">
+         <div class="card-header bg-info text-center text-white">
            <p class="card-text">No slots limit</p>
          </div>
          <div class="card-body text-center">
            <p class="card-text">Only recommended number of slots for comfort game.</p>
          </div>
        </div>
-       <div class="card bg-light  border-info">
-         <div class="card-header text-center">
+       <div class="card bg-light info-card">
+         <div class="card-header bg-info text-center text-white">
            <p class="card-text">DDOS shield</p>
          </div>
          <div class="card-body text-center">
            <p class="card-text">DDOS protection that recognizes 99% of attacks</p>
          </div>
        </div>
-       <div class="card bg-light border-danger">
-         <div class="card-header text-center">
-           <p class="card-text">Helping source project</p>
+       <div class="card bg-light info-card">
+         <div class="card-header bg-info text-center text-white">
+           <p class="card-text">Open source project</p>
          </div>
          <div class="card-body text-center">
            <p class="card-text">You can contribute to our project on GitHub.</p>
@@ -91,16 +81,20 @@
 
 
 <div class="container">
-  <div class="row">
+  <div class="row row-content">
     <div class="column col-md-12">
-      <h4 class="display-3 text-center"> Checkout our public servers </h4>
+      <h4 class="display-3 text-center text-dark"> Checkout our public servers </h4>
 
       <div class="card server-card">
-        <div class="card-header h5 bg-success">
+        <div class="card-header h5 bg-info text-white">
          [NL] Public Game Vanilla Server
         </div>
-        <div class="card-body">
-          <a href="https://terraria-servers.com/server/3997/"><img src="https://terraria-servers.com/server/3997/banners/leaderboard-1.png" border="0"></a>
+        <div class="card-body server-card-body bg-1">
+          <div class="server-url">
+            <a href="https://terraria-servers.com/server/3997/" target="_blank">
+              <h3 class="text-dark text-center">207.180.233.243 port: 7778</h3>
+            </a>
+          </div>
         </div>
         <div class="card-footer">
           Classic server. The wold is being regenerated once in a week.
@@ -108,11 +102,15 @@
       </div>
 
       <div class="card server-card">
-        <div class="card-header h5 bg-info">
+        <div class="card-header h5 bg-info text-white">
          [NL] TShock Public server
         </div>
-        <div class="card-body">
-          <a href="https://terraria-servers.com/server/3993/"><img src="https://terraria-servers.com/server/3993/banners/leaderboard-2.png" border="0"></a>
+        <div class="card-body server-card-body bg-2">
+          <div class="server-url">
+            <a href="https://terraria-servers.com/server/3993/" target="_blank">
+              <h3 class="text-dark text-center">207.180.233.243 port: 7777</h3>
+            </a>
+          </div>
         </div>
         <div class="card-footer">
           Modded server. We can install any mods you like on this server, just send a message in discord.

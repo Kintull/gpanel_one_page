@@ -70,11 +70,16 @@
 }
 
 .row {
-  margin-top: 15px;
+  margin-top: 30px;
 }
+
+.row-content {
+  margin-top: 60px;
+}
+
 .jumbotron {
   background-image: url(/images/jumbotron.png);
-  background-position: center 20%;
+  background-position: center 35%;
   background-size: cover;
   height: 100%;
 }
@@ -89,4 +94,42 @@
   -moz-box-shadow: 6px 6px 11px -7px rgba(0,0,0,1);
   box-shadow: 6px 6px 11px -7px rgba(0,0,0,1);
   background: rgba(255,255,255,0.85);
+}
+
+.info-card {
+  -webkit-box-shadow: 6px 6px 11px -7px rgba(0,0,0,0.7);
+  -moz-box-shadow: 6px 6px 11px -7px rgba(0,0,0,0.7);
+  box-shadow: 6px 6px 11px -7px rgba(0,0,0,0.7);
+  background: rgba(255,255,255,0.85);
+}
+
+.server-card {
+  margin-top: 15px;
+}
+
+.server-card-body {
+  background-image: url(/images/terr-bg1-blur.jpg);
+  background-position: center 75%;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-position: center 10%;
+}
+
+.bg-2 {
+  background-position: center 75%;
+}
+
+.server-url {
+  -webkit-box-shadow: 6px 6px 11px -7px rgba(0,0,0,0.8);
+  -moz-box-shadow: 6px 6px 11px -7px rgba(0,0,0,0.8);
+  box-shadow: 6px 6px 11px -7px rgba(0,0,0,0.8);
+  background: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  width: 60%;
+}
+
+.footer {
+  margin-top: 60px;
 }
