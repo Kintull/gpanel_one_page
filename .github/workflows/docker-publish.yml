@@ -18,10 +18,6 @@ env:
   IMAGE_NAME: kintull/gpanel_one_page
 
   GPANEL_HOST: ${{secrets.HOST}}
-  GPANEL_INTERNAL_PORT: ${{secrets.INTERNAL_PORT}}
-  GPANEL_EXTERNAL_PORT: ${{secrets.EXTERNAL_PORT}}
-  GPANEL_SSL_CERT_PATH: ${{secrets.SSL_CERT_PATH}}
-  GPANEL_SSL_KEY_PATH: ${{secrets.SSL_KEY_PATH}}
   GPANEL_SECRET_KEY_BASE: ${{secrets.SECRET_KEY_BASE}}
   DOCKER_LOGIN: ${{secrets.DOCKER_USER}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}

@@ -3,7 +3,10 @@ version: '3.2'
 services:
   server:
     image: kintull/gpanel_one_page:latest
-    volumes:
-      - /etc/letsencrypt:/etc/letsencrypt
     ports:
-      - 443:4004
+      - "4000:4000"
+    networks:
+      gpanel:
+
+networks:
+  gpanel:

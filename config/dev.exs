@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :gpanel_one_page, GpanelOnePageWeb.Endpoint,
-  http: [port: 4044],
+  http: [port: 4004],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

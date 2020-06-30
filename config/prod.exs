@@ -24,17 +24,12 @@ use Mix.Config
 config :gpanel_one_page, GpanelOnePageWeb.Endpoint,
        url: [
          host: System.get_env("GPANEL_HOST"),
-         port: System.get_env("GPANEL_EXTERNAL_PORT")
+         port: 4000
+       ],
+       http: [
+         port: 4000
        ],
        server: true,
-       force_ssl: [hsts: true],
-       https: [
-         otp_app: nil ,
-         port: String.to_integer(System.get_env("GPANEL_INTERNAL_PORT") || "4004"),
-         cipher_suite: :strong,
-         keyfile: System.get_env("GPANEL_SSL_KEY_PATH"),
-         certfile: System.get_env("GPANEL_SSL_CERT_PATH")
-       ],
        secret_key_base: System.get_env("GPANEL_SECRET_KEY_BASE")
 
 # Do not print debug messages in production
