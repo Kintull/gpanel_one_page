@@ -18,7 +18,7 @@ defmodule GpanelOnePageWeb.Router do
 
     get "/", PageController, :index
 
-    get "/*page", PageController, :index
+    get "/*page", PageController, :not_found
   end
 
   # Other scopes may use custom stacks.

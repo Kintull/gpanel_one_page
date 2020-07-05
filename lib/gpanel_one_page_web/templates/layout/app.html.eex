@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Terraria Hosting - kintu.net</title>
+    <title>Terraria Server Hosting - kintu.net</title>
     <meta name="description" content="Reliable Terraria servers with high quality equipment and DDOS protection.">
     <link rel="canonical" href="https://kintu.net" />
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
@@ -22,7 +22,7 @@
 
   <header>
     <nav class="py-3 navbar bg-dark">
-      <a class="navbar-brand text-white" href="#">Kintu Dedicated Servers</a>
+      <a class="navbar-brand text-white" href="/">Kintu Dedicated Servers</a>
     </nav>
   </header>
 
