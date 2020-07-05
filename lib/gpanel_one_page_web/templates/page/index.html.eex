@@ -3,9 +3,9 @@
     <div class="card-transparent jumbo-card">
       <div class="card-body jumbo-card-body">
         <div class="py-2">
-          <h2>
+          <h1>
            We are building a hosting for Terraria
-          </h2>
+          </h1>
           <p>
             Start Vanilla, TShock, tModLoader servers.
           </p>
